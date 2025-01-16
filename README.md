@@ -1,24 +1,26 @@
 # PRODIGY_CS_TASK-01
 
-Secure AES Encryption Program
-This is a simple Python program that implements AES encryption and decryption using the cryptography library. It allows users to securely encrypt and decrypt messages using a password and random salt for key derivation. The encryption process uses AES in CBC mode with a random initialization vector (IV), and the messages are padded to be AES-compatible using PKCS7 padding.
+1. Input File:
 
-Features:
-Key Generation: Derives a 256-bit encryption key from a user-provided password using the PBKDF2-HMAC key derivation function with SHA-256 hashing.
-Encryption: Encrypts a message using AES (CBC mode) and outputs the encrypted message encoded in Base64.
-Decryption: Decrypts the encrypted message back to its original plaintext.
+Create a text file named message.txt and write the message you want to encrypt or decrypt in it.
 
-Requirements:
-Python 3.x
-cryptography library (install via pip install cryptography)
+2. Running the Program:
 
-How to Use:
-Clone the repository to your local machine.
-Run the program.
-Set a password for encryption and decryption.
-Choose whether to encrypt or decrypt a message.
+If message.txt contains "cyber security", the program will read the file, ask for the shift value, and either encrypt or decrypt the message based on the user's choice.
+The result is saved to encrypted_message.txt or decrypted_message.txt.
+Output:
 
-Example usage:
-python secure_encryption.py
+For encryption with a shift value of 3, encrypted_message.txt will contain "fbehu vhfxulwb".
+For decryption, the result will be "cyber security".
 
-![image](https://github.com/user-attachments/assets/927aa9cb-dd53-4af5-af81-a995b8cd4fdc)
+Usage:
+Create a message.txt file containing the text you want to encrypt or decrypt.
+Run the script.
+
+Provide the filename (message.txt), shift value, and choose whether to encrypt or decrypt.
+Check the output saved to encrypted_message.txt or decrypted_message.txt.
+
+
+
+![image](https://github.com/user-attachments/assets/fb1735f3-2e8f-40c8-a9a5-9871c72423e4)
+
