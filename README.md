@@ -20,3 +20,5 @@ Choose whether to encrypt or decrypt a message.
 
 Example usage:
 python secure_encryption.py
+
+![image](https://github.com/user-attachments/assets/927aa9cb-dd53-4af5-af81-a995b8cd4fdc)
